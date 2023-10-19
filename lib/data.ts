@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import discordLogo from "@/public/discord-logo-png-transparent.png";
+import pokemon from "@/public/pokemon.jpg";
+import melody from "@/public/melody.jpg";
 
 export const links = [
   {
@@ -16,6 +16,10 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
@@ -23,64 +27,59 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Systems Integration Intern",
+    location: "",
+    img: "https://1000logos.net/wp-content/uploads/2020/04/Lockheed-Martin-Logo.png", 
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Data Center / Networking",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Summer 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Engineer Intern",
+    location: "",
+    img:"https://download.logo.wine/logo/JPMorgan_Chase/JPMorgan_Chase-Logo.wine.png",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Full Stack Development",
+    icon: React.createElement(CgWorkAlt),
+    date: "Summer 2023",
+  },
+  {
+    title: "Student",
+    location: "",
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/1200px-UT_Arlington_Mavericks_logo.svg.png", 
+    description:
+      "Final Year",
+    icon: React.createElement(LuGraduationCap),
+    date: "Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Discord Clone",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Full stack discord clone with server, channel, video, audio, and messaging features",
+    tags: ["React", "Next.js", "Tailwind", "MySQL", "Prisma", "Socket.io"],
+    imageUrl: discordLogo,
   },
   {
-    title: "rmtDev",
+    title: "Pokedex Pro",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Developed a web-based Pokemon index using React. Utilized PokeAPI, an open-source RESTful API, to retrieve and display Pokemon data.",
+    tags: ["Javascript","React", "RESTful APIs", "Material UI", "Figma"],
+    imageUrl: pokemon,
   },
   {
-    title: "Word Analytics",
+    title: "MelodyMatch",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Developed an application in Java to recommend a playlist of songs based off of user preferences. Application allowed for users to play a snippet of the song before deciding to like or dislike it.",
+    tags: ["Java", "JavaFX", "Object Oriented Proogramming"],
+    imageUrl: melody,
   },
 ] as const;
 
@@ -96,12 +95,13 @@ export const skillsData = [
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
+  "Junit",
+  "RESTful APIs",
   "Express",
-  "PostgreSQL",
+  "Postman",
+  "Docker",
   "Python",
-  "Django",
-  "Framer Motion",
+  "C", 
+  "SQL",
+  "Networking",
 ] as const;
